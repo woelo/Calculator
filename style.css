@@ -1,0 +1,247 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e0f0ff;
+    margin: 0;
+}
+      .navbar {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          background-color: #eaeef6;
+          top:0;
+          padding: 19px;
+          width:95%;
+          position: fixed;
+          box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+          z-index:1000;
+          padding-top:21px;
+          color: #bb86fc;
+      }
+      #good{
+        color: black;
+        font-size: 20px;
+      }
+       .brand-title{
+         font-size: 1.7em;
+            font-weight: bold;
+            color: #4a90e2;
+            text-decoration: none;
+       }
+       .logooo {
+            font-size: 2em;
+            font-weight: bold;
+            color: white;
+            text-decoration: none;
+        }
+    .logooo>label{
+      color: #bb86fc;
+    }
+      .logooo:hover{
+   text-shadow: 0px  5px 29px #bb86fc;
+      }
+        .navbar-links {
+            display: flex;
+            position: fixed;
+            right: -300px;
+            top: 0;
+            height: 100%;
+            width: 200px;
+            background-color: #eaeef6;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition:  0.9s ease;
+            transition-delay: 0.2s;
+            top: 0;
+            box-shadow: 19px 18px 18px 18px rgba(0, 0, 0, 1);
+        }
+
+        .navbar-links ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .navbar-links li {
+            margin: 20px 0;
+        }
+
+        .navbar-links a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.2em;
+        }
+        .navbar-links a:hover{
+            transition:  0.5s ease;
+          color: black;
+          box-shadow: 0 10px 40px #4a90e2;
+          background-color: #4a90e2;
+          padding: 7.4px;
+          border-radius: 5px;
+        }
+
+        .toggle-button {
+            display: none;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 40px;
+            height: 26px;
+            cursor: pointer;
+        }
+
+        .toggle-button .bar {
+            height: 4.5px;
+            width: 100%;
+            background-color: #4a90e2;
+            border-radius: 11px;
+        }
+
+        .arrow-button {
+            display: ;
+            position: absolute;
+            left: 145px;
+            top: 13px;
+            font-size: 60px;
+            color: #4a90e2;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .navbar-links.active {
+            right: 0;
+        }
+
+        .navbar-links.active .arrow-button {
+            display: block;
+        }
+        .arrow-button:hover{
+  transform: scale(1.1) rotate(360deg);
+  transition: 0.3s ease;
+  }
+
+        @media (max-width: 768px) {
+            .toggle-button {
+                display: flex;
+            }
+
+            .navbar-links {
+                display: flex;
+            }
+
+            .navbar-links ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar-links li {
+                margin: 20px 0;
+            }
+        }
+.calculator {
+    width: 320px;
+    background-color: #f2f4f8;
+    border-radius: 20px;
+    box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+.display input {
+    width: 94%;
+    font-size: 2rem;
+    text-align: right;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    margin-bottom: 15px;
+    background-color: #e3e7ee;
+    color: #333;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.btn {
+    padding: 15px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 15px;
+    background-color: #ffffff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn.operator {
+    background-color: #4a90e2;
+    color: #fff;
+}
+
+.btn.equals {
+    background-color: #ffab40; /* Warna cerah */
+    color: #fff;
+}
+
+.btn.equals:hover {
+    background-color: #4a90e2; /* Warna hover */
+}
+
+.btn.delete {
+    background-color: #e74c3c; /* Warna untuk tombol delete */
+    color: #fff;
+}
+
+.btn:hover {
+    background-color: #d0d6de;
+}
+
+.btn:active {
+    background-color: #c1c6ce;
+    box-shadow: 0 0 15px #4a90e2; /* Cahaya saat ditekan */
+}
+
+@media only screen and (max-width: 600px) {
+    .calculator {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .display input {
+        font-size: 1.5rem;
+    }
+
+    .btn {
+        font-size: 1rem;
+        padding: 10px;
+    }
+}
+.copyright{
+  margin-top: -1
+  font-size: 17px;
+  color: #aaa;
+
+  text-align: center;
+}
+.toggle-button:hover .bar:nth-child(1) {
+ transform: translateY(10px) rotate(45deg);
+ transition: all 0.2s;
+}
+
+.toggle-button:hover .bar:nth-child(2) {
+ transition: all 0.1s;
+ opacity: 0;
+}
+
+.toggle-button:hover .bar:nth-child(3) {
+ transition: all 0.2s;
+ transform: translateY(-11.1px) rotate(-45deg);
+}
+#ccc{
+  background: #4a90e2;
+  color: #fff;
+}

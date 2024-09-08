@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="AhmadR">
+    <link rel="icon" type="image/svg+xml" href="iconnn.png" />
+    <title>madR Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="brand-title">madR Calculator</div>
+    <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </a>
+    <div class="navbar-links">
+       <div class="arrow-button">×</div>
+        <ul>
+            <p><span id="good"> </span></p><hr>
+            <li><a href="https://www.instagram.com/01000001r?igsh=dWZ3bHlnOG85c3Bu">Instagram</a></li>
+            <li><a href="https://www.tiktok.com/@01000001r_?_t=8oGCsyT0lZB&_r=1>Tiktok</a></li>
+            <li><a href="https://ahmadr.vercel.app">AhmadR(Developer)</a></li>
+        </ul>
+    </div>
+</nav>
+    <div class="calculator">
+        <div class="display">
+            <input type="text" id="result" disabled>
+        </div>
+        <div class="buttons">
+            <button class="btn" id="ccc">C</button>
+            <button class="btn">+/-</button>
+            <button class="btn">%</button>
+            <button class="btn operator">/</button>
+
+            <button class="btn">7</button>
+            <button class="btn">8</button>
+            <button class="btn">9</button>
+            <button class="btn operator">*</button>
+
+            <button class="btn">4</button>
+            <button class="btn">5</button>
+            <button class="btn">6</button>
+            <button class="btn operator">-</button>
+
+            <button class="btn">1</button>
+            <button class="btn">2</button>
+            <button class="btn">3</button>
+            <button class="btn operator">+</button>
+
+            <button class="btn">0</button>
+            <button class="btn">.</button>
+            <button class="btn equals">=</button>
+            <button class="btn delete">Del</button> <!-- Tombol delete ditambahkan -->
+        </div>
+   <p class="copyright">©2024 AhmadR. All Rights Reserved.</p>
+    </div>
+    <script src="script.js"></script>
+    <script>
+const date = new Date();
+const hours = date.getHours();
+
+if (hours >= 5 && hours < 12) {
+  document.getElementById("good").innerHTML = "Good Morning!";
+}
+if (hours >= 12 && hours < 17) {
+  document.getElementById("good").innerHTML = "Good Afternoon!";
+}
+if (hours >= 17 && hours < 19) {
+  document.getElementById("good").innerHTML = "Good Evening!";
+}
+if (hours >= 19 && hours < 24) {
+  document.getElementById("good").innerHTML = "Good Night!";
+}
+if (hours >= 24 && hours < 5) {
+  document.getElementById("good").innerHTML = "Good Night!";
+}
+</script>
+<script>
+</script>
+</body>
+</html>
